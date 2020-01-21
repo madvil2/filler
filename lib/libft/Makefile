@@ -1,14 +1,14 @@
-# **************************************************************************** #
+#******************************************************************************#
 #                                                                              #
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: pcollio- <pcollio-@student.21-school.ru    +#+  +:+       +#+         #
+#    By: fsmith <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2018/12/04 21:35:29 by pcollio-          #+#    #+#              #
-#    Updated: 2020/01/19 13:47:55 by pcollio-         ###   ########.fr        #
+#    Created: 2018/12/01 19:16:24 by fsmith            #+#    #+#              #
+#    Updated: 2018/12/01 19:16:26 by fsmith           ###   ########.fr        #
 #                                                                              #
-# **************************************************************************** #
+#******************************************************************************#
 
 NAME = libft.a
 
@@ -22,68 +22,28 @@ IFLAGS :=	-I $(INC_PATH)
 
 HFILES :=	libft
 
-FILES :=	ft_atoi.c\
-			ft_bzero.c\
-			ft_freearr.c\
-			ft_isalnum.c\
-			ft_isalpha.c\
-			ft_isascii.c\
-			ft_isdigit.c\
-			ft_isprint.c\
-			ft_itoa.c\
-			ft_joinfree.c\
-			ft_lstadd.c\
-			ft_lstdel.c\
-			ft_lstdelone.c\
-			ft_lstiter.c\
-			ft_lstmap.c\
-			ft_lstnew.c\
-			ft_memalloc.c\
-			ft_memccpy.c\
-			ft_memchr.c\
-			ft_memcmp.c\
-			ft_memcpy.c\
-			ft_memdel.c\
-			ft_memmove.c\
-			ft_memset.c\
-			ft_putchar.c\
-			ft_putchar_fd.c\
-			ft_putendl.c\
-			ft_putendl_fd.c\
-			ft_putnbr.c\
-			ft_putnbr_fd.c\
-			ft_putstr.c\
-			ft_putstr_fd.c\
-			ft_strcat.c\
-			ft_strchr.c\
-			ft_strclr.c\
-			ft_strcmp.c\
-			ft_strcpy.c\
-			ft_strcspn.c\
-			ft_strdel.c\
-			ft_strdup.c\
-			ft_strequ.c\
-			ft_striter.c\
-			ft_striteri.c\
-			ft_strjoin.c\
-			ft_strlcat.c\
-			ft_strlen.c\
-			ft_strmap.c\
-			ft_strmapi.c\
-			ft_strncat.c\
-			ft_strncmp.c\
-			ft_strncpy.c\
-			ft_strnequ.c\
-			ft_strnew.c\
-			ft_strnstr.c\
-			ft_strrchr.c\
-			ft_strsplit.c\
-			ft_strstr.c\
-			ft_strsub.c\
-			ft_strtrim.c\
-			ft_tolower.c\
-			ft_toupper.c\
-			get_next_line.c
+FILES :=	ft_abs ft_abs_double ft_atoi_base ft_atoi_hex ft_atoi ft_bzero\
+			ft_catstr ft_count_words ft_diff_double ft_dtoa ft_fibonacci\
+			ft_is_sort ft_isalnum ft_isalpha ft_isascii ft_isdigit\
+			ft_isprint ft_itoa_base_big_h ft_itoa_base_big_hh\
+			ft_itoa_base_big_l ft_itoa_base_big_ll ft_itoa_base_big\
+			ft_itoa_base_small_h ft_itoa_base_small_hh ft_itoa_base_small_l\
+			ft_itoa_base_small_ll ft_itoa_base_small ft_itoa_h ft_itoa_hh\
+			ft_itoa_l ft_itoa_ll ft_itoa ft_itoalen ft_lstadd ft_lstdel\
+			ft_lstdelone ft_lstiter ft_lstmap ft_lstnew ft_max ft_memalloc\
+			ft_memccpy ft_memchr ft_memcmp ft_memcpy ft_memdel ft_memmove\
+			ft_memset ft_min ft_power ft_putchar_fd ft_putchar\
+			ft_putendl_fd ft_putendl ft_putnbr_fd ft_putnbr ft_putstr_fd\
+			ft_putstr ft_recursive_factorial ft_recursive_power\
+			ft_round_double ft_sqrt_up ft_sqrt ft_strcat ft_strchr\
+			ft_strchrn ft_strclr ft_strcmp ft_strcpy ft_strcut ft_strdel\
+			ft_strdup ft_strequ ft_striter ft_striteri ft_strjoin\
+			ft_strlcat ft_strlen ft_strmap ft_strmapi ft_strncat\
+			ft_strncmp ft_strncpy ft_strnequ ft_strnew ft_strnstr\
+			ft_strrchr ft_strrejoin ft_strrev ft_strsplit ft_strstr\
+			ft_strsub ft_strtrim ft_tolower ft_toupper ft_utoa_h\
+			ft_utoa_hh ft_utoa_l ft_utoa_ll ft_utoa get_next_line\
+			ft_strsplitwhitespaces
 
 HDRS =		$(addprefix $(INC_PATH), $(addsuffix .h, $(HFILES)))
 SRCS =		$(addprefix $(SRC_PATH), $(addsuffix .c, $(FILES)))

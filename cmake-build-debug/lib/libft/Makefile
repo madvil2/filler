@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/pcollio-/Projects/Filler
+CMAKE_SOURCE_DIR = /Users/pcollio-/Projects/filler_team
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/pcollio-/Projects/Filler/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/pcollio-/Projects/filler_team/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /Users/pcollio-/Projects/Filler/cmake-build-debug/CMakeFiles /Users/pcollio-/Projects/Filler/cmake-build-debug/lib/libft/CMakeFiles/progress.marks
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/libft/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/pcollio-/Projects/Filler/cmake-build-debug/CMakeFiles 0
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /Users/pcollio-/Projects/filler_team/cmake-build-debug/CMakeFiles /Users/pcollio-/Projects/filler_team/cmake-build-debug/lib/libft/CMakeFiles/progress.marks
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/libft/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/pcollio-/Projects/filler_team/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/libft/clean
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/libft/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/libft/preinstall
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/libft/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/libft/preinstall
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/libft/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lib/libft/CMakeFiles/libft.dir/rule:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/libft/CMakeFiles/libft.dir/rule
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/libft/CMakeFiles/libft.dir/rule
 .PHONY : lib/libft/CMakeFiles/libft.dir/rule
 
 # Convenience name for target.
@@ -122,8 +122,62 @@ libft: lib/libft/CMakeFiles/libft.dir/rule
 
 # fast build rule for target.
 libft/fast:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/build
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/build
 .PHONY : libft/fast
+
+src/ft_abs.o: src/ft_abs.c.o
+
+.PHONY : src/ft_abs.o
+
+# target to build an object file
+src/ft_abs.c.o:
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_abs.c.o
+.PHONY : src/ft_abs.c.o
+
+src/ft_abs.i: src/ft_abs.c.i
+
+.PHONY : src/ft_abs.i
+
+# target to preprocess a source file
+src/ft_abs.c.i:
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_abs.c.i
+.PHONY : src/ft_abs.c.i
+
+src/ft_abs.s: src/ft_abs.c.s
+
+.PHONY : src/ft_abs.s
+
+# target to generate assembly for a file
+src/ft_abs.c.s:
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_abs.c.s
+.PHONY : src/ft_abs.c.s
+
+src/ft_abs_double.o: src/ft_abs_double.c.o
+
+.PHONY : src/ft_abs_double.o
+
+# target to build an object file
+src/ft_abs_double.c.o:
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_abs_double.c.o
+.PHONY : src/ft_abs_double.c.o
+
+src/ft_abs_double.i: src/ft_abs_double.c.i
+
+.PHONY : src/ft_abs_double.i
+
+# target to preprocess a source file
+src/ft_abs_double.c.i:
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_abs_double.c.i
+.PHONY : src/ft_abs_double.c.i
+
+src/ft_abs_double.s: src/ft_abs_double.c.s
+
+.PHONY : src/ft_abs_double.s
+
+# target to generate assembly for a file
+src/ft_abs_double.c.s:
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_abs_double.c.s
+.PHONY : src/ft_abs_double.c.s
 
 src/ft_atoi.o: src/ft_atoi.c.o
 
@@ -131,7 +185,7 @@ src/ft_atoi.o: src/ft_atoi.c.o
 
 # target to build an object file
 src/ft_atoi.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_atoi.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_atoi.c.o
 .PHONY : src/ft_atoi.c.o
 
 src/ft_atoi.i: src/ft_atoi.c.i
@@ -140,7 +194,7 @@ src/ft_atoi.i: src/ft_atoi.c.i
 
 # target to preprocess a source file
 src/ft_atoi.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_atoi.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_atoi.c.i
 .PHONY : src/ft_atoi.c.i
 
 src/ft_atoi.s: src/ft_atoi.c.s
@@ -149,8 +203,35 @@ src/ft_atoi.s: src/ft_atoi.c.s
 
 # target to generate assembly for a file
 src/ft_atoi.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_atoi.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_atoi.c.s
 .PHONY : src/ft_atoi.c.s
+
+src/ft_atoi_hex.o: src/ft_atoi_hex.c.o
+
+.PHONY : src/ft_atoi_hex.o
+
+# target to build an object file
+src/ft_atoi_hex.c.o:
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_atoi_hex.c.o
+.PHONY : src/ft_atoi_hex.c.o
+
+src/ft_atoi_hex.i: src/ft_atoi_hex.c.i
+
+.PHONY : src/ft_atoi_hex.i
+
+# target to preprocess a source file
+src/ft_atoi_hex.c.i:
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_atoi_hex.c.i
+.PHONY : src/ft_atoi_hex.c.i
+
+src/ft_atoi_hex.s: src/ft_atoi_hex.c.s
+
+.PHONY : src/ft_atoi_hex.s
+
+# target to generate assembly for a file
+src/ft_atoi_hex.c.s:
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_atoi_hex.c.s
+.PHONY : src/ft_atoi_hex.c.s
 
 src/ft_bzero.o: src/ft_bzero.c.o
 
@@ -158,7 +239,7 @@ src/ft_bzero.o: src/ft_bzero.c.o
 
 # target to build an object file
 src/ft_bzero.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_bzero.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_bzero.c.o
 .PHONY : src/ft_bzero.c.o
 
 src/ft_bzero.i: src/ft_bzero.c.i
@@ -167,7 +248,7 @@ src/ft_bzero.i: src/ft_bzero.c.i
 
 # target to preprocess a source file
 src/ft_bzero.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_bzero.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_bzero.c.i
 .PHONY : src/ft_bzero.c.i
 
 src/ft_bzero.s: src/ft_bzero.c.s
@@ -176,35 +257,89 @@ src/ft_bzero.s: src/ft_bzero.c.s
 
 # target to generate assembly for a file
 src/ft_bzero.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_bzero.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_bzero.c.s
 .PHONY : src/ft_bzero.c.s
 
-src/ft_freearr.o: src/ft_freearr.c.o
+src/ft_count_words.o: src/ft_count_words.c.o
 
-.PHONY : src/ft_freearr.o
+.PHONY : src/ft_count_words.o
 
 # target to build an object file
-src/ft_freearr.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_freearr.c.o
-.PHONY : src/ft_freearr.c.o
+src/ft_count_words.c.o:
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_count_words.c.o
+.PHONY : src/ft_count_words.c.o
 
-src/ft_freearr.i: src/ft_freearr.c.i
+src/ft_count_words.i: src/ft_count_words.c.i
 
-.PHONY : src/ft_freearr.i
+.PHONY : src/ft_count_words.i
 
 # target to preprocess a source file
-src/ft_freearr.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_freearr.c.i
-.PHONY : src/ft_freearr.c.i
+src/ft_count_words.c.i:
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_count_words.c.i
+.PHONY : src/ft_count_words.c.i
 
-src/ft_freearr.s: src/ft_freearr.c.s
+src/ft_count_words.s: src/ft_count_words.c.s
 
-.PHONY : src/ft_freearr.s
+.PHONY : src/ft_count_words.s
 
 # target to generate assembly for a file
-src/ft_freearr.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_freearr.c.s
-.PHONY : src/ft_freearr.c.s
+src/ft_count_words.c.s:
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_count_words.c.s
+.PHONY : src/ft_count_words.c.s
+
+src/ft_diff_double.o: src/ft_diff_double.c.o
+
+.PHONY : src/ft_diff_double.o
+
+# target to build an object file
+src/ft_diff_double.c.o:
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_diff_double.c.o
+.PHONY : src/ft_diff_double.c.o
+
+src/ft_diff_double.i: src/ft_diff_double.c.i
+
+.PHONY : src/ft_diff_double.i
+
+# target to preprocess a source file
+src/ft_diff_double.c.i:
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_diff_double.c.i
+.PHONY : src/ft_diff_double.c.i
+
+src/ft_diff_double.s: src/ft_diff_double.c.s
+
+.PHONY : src/ft_diff_double.s
+
+# target to generate assembly for a file
+src/ft_diff_double.c.s:
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_diff_double.c.s
+.PHONY : src/ft_diff_double.c.s
+
+src/ft_dtoa.o: src/ft_dtoa.c.o
+
+.PHONY : src/ft_dtoa.o
+
+# target to build an object file
+src/ft_dtoa.c.o:
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_dtoa.c.o
+.PHONY : src/ft_dtoa.c.o
+
+src/ft_dtoa.i: src/ft_dtoa.c.i
+
+.PHONY : src/ft_dtoa.i
+
+# target to preprocess a source file
+src/ft_dtoa.c.i:
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_dtoa.c.i
+.PHONY : src/ft_dtoa.c.i
+
+src/ft_dtoa.s: src/ft_dtoa.c.s
+
+.PHONY : src/ft_dtoa.s
+
+# target to generate assembly for a file
+src/ft_dtoa.c.s:
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_dtoa.c.s
+.PHONY : src/ft_dtoa.c.s
 
 src/ft_isalnum.o: src/ft_isalnum.c.o
 
@@ -212,7 +347,7 @@ src/ft_isalnum.o: src/ft_isalnum.c.o
 
 # target to build an object file
 src/ft_isalnum.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_isalnum.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_isalnum.c.o
 .PHONY : src/ft_isalnum.c.o
 
 src/ft_isalnum.i: src/ft_isalnum.c.i
@@ -221,7 +356,7 @@ src/ft_isalnum.i: src/ft_isalnum.c.i
 
 # target to preprocess a source file
 src/ft_isalnum.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_isalnum.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_isalnum.c.i
 .PHONY : src/ft_isalnum.c.i
 
 src/ft_isalnum.s: src/ft_isalnum.c.s
@@ -230,7 +365,7 @@ src/ft_isalnum.s: src/ft_isalnum.c.s
 
 # target to generate assembly for a file
 src/ft_isalnum.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_isalnum.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_isalnum.c.s
 .PHONY : src/ft_isalnum.c.s
 
 src/ft_isalpha.o: src/ft_isalpha.c.o
@@ -239,7 +374,7 @@ src/ft_isalpha.o: src/ft_isalpha.c.o
 
 # target to build an object file
 src/ft_isalpha.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_isalpha.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_isalpha.c.o
 .PHONY : src/ft_isalpha.c.o
 
 src/ft_isalpha.i: src/ft_isalpha.c.i
@@ -248,7 +383,7 @@ src/ft_isalpha.i: src/ft_isalpha.c.i
 
 # target to preprocess a source file
 src/ft_isalpha.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_isalpha.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_isalpha.c.i
 .PHONY : src/ft_isalpha.c.i
 
 src/ft_isalpha.s: src/ft_isalpha.c.s
@@ -257,7 +392,7 @@ src/ft_isalpha.s: src/ft_isalpha.c.s
 
 # target to generate assembly for a file
 src/ft_isalpha.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_isalpha.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_isalpha.c.s
 .PHONY : src/ft_isalpha.c.s
 
 src/ft_isascii.o: src/ft_isascii.c.o
@@ -266,7 +401,7 @@ src/ft_isascii.o: src/ft_isascii.c.o
 
 # target to build an object file
 src/ft_isascii.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_isascii.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_isascii.c.o
 .PHONY : src/ft_isascii.c.o
 
 src/ft_isascii.i: src/ft_isascii.c.i
@@ -275,7 +410,7 @@ src/ft_isascii.i: src/ft_isascii.c.i
 
 # target to preprocess a source file
 src/ft_isascii.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_isascii.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_isascii.c.i
 .PHONY : src/ft_isascii.c.i
 
 src/ft_isascii.s: src/ft_isascii.c.s
@@ -284,7 +419,7 @@ src/ft_isascii.s: src/ft_isascii.c.s
 
 # target to generate assembly for a file
 src/ft_isascii.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_isascii.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_isascii.c.s
 .PHONY : src/ft_isascii.c.s
 
 src/ft_isdigit.o: src/ft_isdigit.c.o
@@ -293,7 +428,7 @@ src/ft_isdigit.o: src/ft_isdigit.c.o
 
 # target to build an object file
 src/ft_isdigit.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_isdigit.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_isdigit.c.o
 .PHONY : src/ft_isdigit.c.o
 
 src/ft_isdigit.i: src/ft_isdigit.c.i
@@ -302,7 +437,7 @@ src/ft_isdigit.i: src/ft_isdigit.c.i
 
 # target to preprocess a source file
 src/ft_isdigit.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_isdigit.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_isdigit.c.i
 .PHONY : src/ft_isdigit.c.i
 
 src/ft_isdigit.s: src/ft_isdigit.c.s
@@ -311,7 +446,7 @@ src/ft_isdigit.s: src/ft_isdigit.c.s
 
 # target to generate assembly for a file
 src/ft_isdigit.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_isdigit.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_isdigit.c.s
 .PHONY : src/ft_isdigit.c.s
 
 src/ft_isprint.o: src/ft_isprint.c.o
@@ -320,7 +455,7 @@ src/ft_isprint.o: src/ft_isprint.c.o
 
 # target to build an object file
 src/ft_isprint.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_isprint.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_isprint.c.o
 .PHONY : src/ft_isprint.c.o
 
 src/ft_isprint.i: src/ft_isprint.c.i
@@ -329,7 +464,7 @@ src/ft_isprint.i: src/ft_isprint.c.i
 
 # target to preprocess a source file
 src/ft_isprint.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_isprint.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_isprint.c.i
 .PHONY : src/ft_isprint.c.i
 
 src/ft_isprint.s: src/ft_isprint.c.s
@@ -338,7 +473,7 @@ src/ft_isprint.s: src/ft_isprint.c.s
 
 # target to generate assembly for a file
 src/ft_isprint.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_isprint.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_isprint.c.s
 .PHONY : src/ft_isprint.c.s
 
 src/ft_itoa.o: src/ft_itoa.c.o
@@ -347,7 +482,7 @@ src/ft_itoa.o: src/ft_itoa.c.o
 
 # target to build an object file
 src/ft_itoa.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_itoa.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_itoa.c.o
 .PHONY : src/ft_itoa.c.o
 
 src/ft_itoa.i: src/ft_itoa.c.i
@@ -356,7 +491,7 @@ src/ft_itoa.i: src/ft_itoa.c.i
 
 # target to preprocess a source file
 src/ft_itoa.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_itoa.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_itoa.c.i
 .PHONY : src/ft_itoa.c.i
 
 src/ft_itoa.s: src/ft_itoa.c.s
@@ -365,35 +500,35 @@ src/ft_itoa.s: src/ft_itoa.c.s
 
 # target to generate assembly for a file
 src/ft_itoa.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_itoa.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_itoa.c.s
 .PHONY : src/ft_itoa.c.s
 
-src/ft_joinfree.o: src/ft_joinfree.c.o
+src/ft_itoalen.o: src/ft_itoalen.c.o
 
-.PHONY : src/ft_joinfree.o
+.PHONY : src/ft_itoalen.o
 
 # target to build an object file
-src/ft_joinfree.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_joinfree.c.o
-.PHONY : src/ft_joinfree.c.o
+src/ft_itoalen.c.o:
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_itoalen.c.o
+.PHONY : src/ft_itoalen.c.o
 
-src/ft_joinfree.i: src/ft_joinfree.c.i
+src/ft_itoalen.i: src/ft_itoalen.c.i
 
-.PHONY : src/ft_joinfree.i
+.PHONY : src/ft_itoalen.i
 
 # target to preprocess a source file
-src/ft_joinfree.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_joinfree.c.i
-.PHONY : src/ft_joinfree.c.i
+src/ft_itoalen.c.i:
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_itoalen.c.i
+.PHONY : src/ft_itoalen.c.i
 
-src/ft_joinfree.s: src/ft_joinfree.c.s
+src/ft_itoalen.s: src/ft_itoalen.c.s
 
-.PHONY : src/ft_joinfree.s
+.PHONY : src/ft_itoalen.s
 
 # target to generate assembly for a file
-src/ft_joinfree.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_joinfree.c.s
-.PHONY : src/ft_joinfree.c.s
+src/ft_itoalen.c.s:
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_itoalen.c.s
+.PHONY : src/ft_itoalen.c.s
 
 src/ft_lstadd.o: src/ft_lstadd.c.o
 
@@ -401,7 +536,7 @@ src/ft_lstadd.o: src/ft_lstadd.c.o
 
 # target to build an object file
 src/ft_lstadd.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_lstadd.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_lstadd.c.o
 .PHONY : src/ft_lstadd.c.o
 
 src/ft_lstadd.i: src/ft_lstadd.c.i
@@ -410,7 +545,7 @@ src/ft_lstadd.i: src/ft_lstadd.c.i
 
 # target to preprocess a source file
 src/ft_lstadd.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_lstadd.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_lstadd.c.i
 .PHONY : src/ft_lstadd.c.i
 
 src/ft_lstadd.s: src/ft_lstadd.c.s
@@ -419,7 +554,7 @@ src/ft_lstadd.s: src/ft_lstadd.c.s
 
 # target to generate assembly for a file
 src/ft_lstadd.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_lstadd.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_lstadd.c.s
 .PHONY : src/ft_lstadd.c.s
 
 src/ft_lstdel.o: src/ft_lstdel.c.o
@@ -428,7 +563,7 @@ src/ft_lstdel.o: src/ft_lstdel.c.o
 
 # target to build an object file
 src/ft_lstdel.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_lstdel.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_lstdel.c.o
 .PHONY : src/ft_lstdel.c.o
 
 src/ft_lstdel.i: src/ft_lstdel.c.i
@@ -437,7 +572,7 @@ src/ft_lstdel.i: src/ft_lstdel.c.i
 
 # target to preprocess a source file
 src/ft_lstdel.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_lstdel.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_lstdel.c.i
 .PHONY : src/ft_lstdel.c.i
 
 src/ft_lstdel.s: src/ft_lstdel.c.s
@@ -446,7 +581,7 @@ src/ft_lstdel.s: src/ft_lstdel.c.s
 
 # target to generate assembly for a file
 src/ft_lstdel.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_lstdel.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_lstdel.c.s
 .PHONY : src/ft_lstdel.c.s
 
 src/ft_lstdelone.o: src/ft_lstdelone.c.o
@@ -455,7 +590,7 @@ src/ft_lstdelone.o: src/ft_lstdelone.c.o
 
 # target to build an object file
 src/ft_lstdelone.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_lstdelone.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_lstdelone.c.o
 .PHONY : src/ft_lstdelone.c.o
 
 src/ft_lstdelone.i: src/ft_lstdelone.c.i
@@ -464,7 +599,7 @@ src/ft_lstdelone.i: src/ft_lstdelone.c.i
 
 # target to preprocess a source file
 src/ft_lstdelone.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_lstdelone.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_lstdelone.c.i
 .PHONY : src/ft_lstdelone.c.i
 
 src/ft_lstdelone.s: src/ft_lstdelone.c.s
@@ -473,7 +608,7 @@ src/ft_lstdelone.s: src/ft_lstdelone.c.s
 
 # target to generate assembly for a file
 src/ft_lstdelone.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_lstdelone.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_lstdelone.c.s
 .PHONY : src/ft_lstdelone.c.s
 
 src/ft_lstiter.o: src/ft_lstiter.c.o
@@ -482,7 +617,7 @@ src/ft_lstiter.o: src/ft_lstiter.c.o
 
 # target to build an object file
 src/ft_lstiter.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_lstiter.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_lstiter.c.o
 .PHONY : src/ft_lstiter.c.o
 
 src/ft_lstiter.i: src/ft_lstiter.c.i
@@ -491,7 +626,7 @@ src/ft_lstiter.i: src/ft_lstiter.c.i
 
 # target to preprocess a source file
 src/ft_lstiter.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_lstiter.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_lstiter.c.i
 .PHONY : src/ft_lstiter.c.i
 
 src/ft_lstiter.s: src/ft_lstiter.c.s
@@ -500,7 +635,7 @@ src/ft_lstiter.s: src/ft_lstiter.c.s
 
 # target to generate assembly for a file
 src/ft_lstiter.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_lstiter.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_lstiter.c.s
 .PHONY : src/ft_lstiter.c.s
 
 src/ft_lstmap.o: src/ft_lstmap.c.o
@@ -509,7 +644,7 @@ src/ft_lstmap.o: src/ft_lstmap.c.o
 
 # target to build an object file
 src/ft_lstmap.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_lstmap.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_lstmap.c.o
 .PHONY : src/ft_lstmap.c.o
 
 src/ft_lstmap.i: src/ft_lstmap.c.i
@@ -518,7 +653,7 @@ src/ft_lstmap.i: src/ft_lstmap.c.i
 
 # target to preprocess a source file
 src/ft_lstmap.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_lstmap.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_lstmap.c.i
 .PHONY : src/ft_lstmap.c.i
 
 src/ft_lstmap.s: src/ft_lstmap.c.s
@@ -527,7 +662,7 @@ src/ft_lstmap.s: src/ft_lstmap.c.s
 
 # target to generate assembly for a file
 src/ft_lstmap.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_lstmap.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_lstmap.c.s
 .PHONY : src/ft_lstmap.c.s
 
 src/ft_lstnew.o: src/ft_lstnew.c.o
@@ -536,7 +671,7 @@ src/ft_lstnew.o: src/ft_lstnew.c.o
 
 # target to build an object file
 src/ft_lstnew.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_lstnew.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_lstnew.c.o
 .PHONY : src/ft_lstnew.c.o
 
 src/ft_lstnew.i: src/ft_lstnew.c.i
@@ -545,7 +680,7 @@ src/ft_lstnew.i: src/ft_lstnew.c.i
 
 # target to preprocess a source file
 src/ft_lstnew.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_lstnew.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_lstnew.c.i
 .PHONY : src/ft_lstnew.c.i
 
 src/ft_lstnew.s: src/ft_lstnew.c.s
@@ -554,7 +689,7 @@ src/ft_lstnew.s: src/ft_lstnew.c.s
 
 # target to generate assembly for a file
 src/ft_lstnew.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_lstnew.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_lstnew.c.s
 .PHONY : src/ft_lstnew.c.s
 
 src/ft_memalloc.o: src/ft_memalloc.c.o
@@ -563,7 +698,7 @@ src/ft_memalloc.o: src/ft_memalloc.c.o
 
 # target to build an object file
 src/ft_memalloc.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memalloc.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memalloc.c.o
 .PHONY : src/ft_memalloc.c.o
 
 src/ft_memalloc.i: src/ft_memalloc.c.i
@@ -572,7 +707,7 @@ src/ft_memalloc.i: src/ft_memalloc.c.i
 
 # target to preprocess a source file
 src/ft_memalloc.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memalloc.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memalloc.c.i
 .PHONY : src/ft_memalloc.c.i
 
 src/ft_memalloc.s: src/ft_memalloc.c.s
@@ -581,7 +716,7 @@ src/ft_memalloc.s: src/ft_memalloc.c.s
 
 # target to generate assembly for a file
 src/ft_memalloc.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memalloc.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memalloc.c.s
 .PHONY : src/ft_memalloc.c.s
 
 src/ft_memccpy.o: src/ft_memccpy.c.o
@@ -590,7 +725,7 @@ src/ft_memccpy.o: src/ft_memccpy.c.o
 
 # target to build an object file
 src/ft_memccpy.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memccpy.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memccpy.c.o
 .PHONY : src/ft_memccpy.c.o
 
 src/ft_memccpy.i: src/ft_memccpy.c.i
@@ -599,7 +734,7 @@ src/ft_memccpy.i: src/ft_memccpy.c.i
 
 # target to preprocess a source file
 src/ft_memccpy.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memccpy.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memccpy.c.i
 .PHONY : src/ft_memccpy.c.i
 
 src/ft_memccpy.s: src/ft_memccpy.c.s
@@ -608,7 +743,7 @@ src/ft_memccpy.s: src/ft_memccpy.c.s
 
 # target to generate assembly for a file
 src/ft_memccpy.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memccpy.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memccpy.c.s
 .PHONY : src/ft_memccpy.c.s
 
 src/ft_memchr.o: src/ft_memchr.c.o
@@ -617,7 +752,7 @@ src/ft_memchr.o: src/ft_memchr.c.o
 
 # target to build an object file
 src/ft_memchr.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memchr.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memchr.c.o
 .PHONY : src/ft_memchr.c.o
 
 src/ft_memchr.i: src/ft_memchr.c.i
@@ -626,7 +761,7 @@ src/ft_memchr.i: src/ft_memchr.c.i
 
 # target to preprocess a source file
 src/ft_memchr.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memchr.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memchr.c.i
 .PHONY : src/ft_memchr.c.i
 
 src/ft_memchr.s: src/ft_memchr.c.s
@@ -635,7 +770,7 @@ src/ft_memchr.s: src/ft_memchr.c.s
 
 # target to generate assembly for a file
 src/ft_memchr.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memchr.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memchr.c.s
 .PHONY : src/ft_memchr.c.s
 
 src/ft_memcmp.o: src/ft_memcmp.c.o
@@ -644,7 +779,7 @@ src/ft_memcmp.o: src/ft_memcmp.c.o
 
 # target to build an object file
 src/ft_memcmp.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memcmp.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memcmp.c.o
 .PHONY : src/ft_memcmp.c.o
 
 src/ft_memcmp.i: src/ft_memcmp.c.i
@@ -653,7 +788,7 @@ src/ft_memcmp.i: src/ft_memcmp.c.i
 
 # target to preprocess a source file
 src/ft_memcmp.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memcmp.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memcmp.c.i
 .PHONY : src/ft_memcmp.c.i
 
 src/ft_memcmp.s: src/ft_memcmp.c.s
@@ -662,7 +797,7 @@ src/ft_memcmp.s: src/ft_memcmp.c.s
 
 # target to generate assembly for a file
 src/ft_memcmp.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memcmp.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memcmp.c.s
 .PHONY : src/ft_memcmp.c.s
 
 src/ft_memcpy.o: src/ft_memcpy.c.o
@@ -671,7 +806,7 @@ src/ft_memcpy.o: src/ft_memcpy.c.o
 
 # target to build an object file
 src/ft_memcpy.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memcpy.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memcpy.c.o
 .PHONY : src/ft_memcpy.c.o
 
 src/ft_memcpy.i: src/ft_memcpy.c.i
@@ -680,7 +815,7 @@ src/ft_memcpy.i: src/ft_memcpy.c.i
 
 # target to preprocess a source file
 src/ft_memcpy.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memcpy.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memcpy.c.i
 .PHONY : src/ft_memcpy.c.i
 
 src/ft_memcpy.s: src/ft_memcpy.c.s
@@ -689,7 +824,7 @@ src/ft_memcpy.s: src/ft_memcpy.c.s
 
 # target to generate assembly for a file
 src/ft_memcpy.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memcpy.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memcpy.c.s
 .PHONY : src/ft_memcpy.c.s
 
 src/ft_memdel.o: src/ft_memdel.c.o
@@ -698,7 +833,7 @@ src/ft_memdel.o: src/ft_memdel.c.o
 
 # target to build an object file
 src/ft_memdel.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memdel.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memdel.c.o
 .PHONY : src/ft_memdel.c.o
 
 src/ft_memdel.i: src/ft_memdel.c.i
@@ -707,7 +842,7 @@ src/ft_memdel.i: src/ft_memdel.c.i
 
 # target to preprocess a source file
 src/ft_memdel.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memdel.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memdel.c.i
 .PHONY : src/ft_memdel.c.i
 
 src/ft_memdel.s: src/ft_memdel.c.s
@@ -716,7 +851,7 @@ src/ft_memdel.s: src/ft_memdel.c.s
 
 # target to generate assembly for a file
 src/ft_memdel.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memdel.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memdel.c.s
 .PHONY : src/ft_memdel.c.s
 
 src/ft_memmove.o: src/ft_memmove.c.o
@@ -725,7 +860,7 @@ src/ft_memmove.o: src/ft_memmove.c.o
 
 # target to build an object file
 src/ft_memmove.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memmove.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memmove.c.o
 .PHONY : src/ft_memmove.c.o
 
 src/ft_memmove.i: src/ft_memmove.c.i
@@ -734,7 +869,7 @@ src/ft_memmove.i: src/ft_memmove.c.i
 
 # target to preprocess a source file
 src/ft_memmove.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memmove.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memmove.c.i
 .PHONY : src/ft_memmove.c.i
 
 src/ft_memmove.s: src/ft_memmove.c.s
@@ -743,7 +878,7 @@ src/ft_memmove.s: src/ft_memmove.c.s
 
 # target to generate assembly for a file
 src/ft_memmove.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memmove.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memmove.c.s
 .PHONY : src/ft_memmove.c.s
 
 src/ft_memset.o: src/ft_memset.c.o
@@ -752,7 +887,7 @@ src/ft_memset.o: src/ft_memset.c.o
 
 # target to build an object file
 src/ft_memset.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memset.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memset.c.o
 .PHONY : src/ft_memset.c.o
 
 src/ft_memset.i: src/ft_memset.c.i
@@ -761,7 +896,7 @@ src/ft_memset.i: src/ft_memset.c.i
 
 # target to preprocess a source file
 src/ft_memset.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memset.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memset.c.i
 .PHONY : src/ft_memset.c.i
 
 src/ft_memset.s: src/ft_memset.c.s
@@ -770,8 +905,35 @@ src/ft_memset.s: src/ft_memset.c.s
 
 # target to generate assembly for a file
 src/ft_memset.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memset.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_memset.c.s
 .PHONY : src/ft_memset.c.s
+
+src/ft_power.o: src/ft_power.c.o
+
+.PHONY : src/ft_power.o
+
+# target to build an object file
+src/ft_power.c.o:
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_power.c.o
+.PHONY : src/ft_power.c.o
+
+src/ft_power.i: src/ft_power.c.i
+
+.PHONY : src/ft_power.i
+
+# target to preprocess a source file
+src/ft_power.c.i:
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_power.c.i
+.PHONY : src/ft_power.c.i
+
+src/ft_power.s: src/ft_power.c.s
+
+.PHONY : src/ft_power.s
+
+# target to generate assembly for a file
+src/ft_power.c.s:
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_power.c.s
+.PHONY : src/ft_power.c.s
 
 src/ft_putchar.o: src/ft_putchar.c.o
 
@@ -779,7 +941,7 @@ src/ft_putchar.o: src/ft_putchar.c.o
 
 # target to build an object file
 src/ft_putchar.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putchar.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putchar.c.o
 .PHONY : src/ft_putchar.c.o
 
 src/ft_putchar.i: src/ft_putchar.c.i
@@ -788,7 +950,7 @@ src/ft_putchar.i: src/ft_putchar.c.i
 
 # target to preprocess a source file
 src/ft_putchar.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putchar.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putchar.c.i
 .PHONY : src/ft_putchar.c.i
 
 src/ft_putchar.s: src/ft_putchar.c.s
@@ -797,7 +959,7 @@ src/ft_putchar.s: src/ft_putchar.c.s
 
 # target to generate assembly for a file
 src/ft_putchar.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putchar.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putchar.c.s
 .PHONY : src/ft_putchar.c.s
 
 src/ft_putchar_fd.o: src/ft_putchar_fd.c.o
@@ -806,7 +968,7 @@ src/ft_putchar_fd.o: src/ft_putchar_fd.c.o
 
 # target to build an object file
 src/ft_putchar_fd.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putchar_fd.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putchar_fd.c.o
 .PHONY : src/ft_putchar_fd.c.o
 
 src/ft_putchar_fd.i: src/ft_putchar_fd.c.i
@@ -815,7 +977,7 @@ src/ft_putchar_fd.i: src/ft_putchar_fd.c.i
 
 # target to preprocess a source file
 src/ft_putchar_fd.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putchar_fd.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putchar_fd.c.i
 .PHONY : src/ft_putchar_fd.c.i
 
 src/ft_putchar_fd.s: src/ft_putchar_fd.c.s
@@ -824,7 +986,7 @@ src/ft_putchar_fd.s: src/ft_putchar_fd.c.s
 
 # target to generate assembly for a file
 src/ft_putchar_fd.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putchar_fd.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putchar_fd.c.s
 .PHONY : src/ft_putchar_fd.c.s
 
 src/ft_putendl.o: src/ft_putendl.c.o
@@ -833,7 +995,7 @@ src/ft_putendl.o: src/ft_putendl.c.o
 
 # target to build an object file
 src/ft_putendl.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putendl.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putendl.c.o
 .PHONY : src/ft_putendl.c.o
 
 src/ft_putendl.i: src/ft_putendl.c.i
@@ -842,7 +1004,7 @@ src/ft_putendl.i: src/ft_putendl.c.i
 
 # target to preprocess a source file
 src/ft_putendl.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putendl.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putendl.c.i
 .PHONY : src/ft_putendl.c.i
 
 src/ft_putendl.s: src/ft_putendl.c.s
@@ -851,7 +1013,7 @@ src/ft_putendl.s: src/ft_putendl.c.s
 
 # target to generate assembly for a file
 src/ft_putendl.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putendl.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putendl.c.s
 .PHONY : src/ft_putendl.c.s
 
 src/ft_putendl_fd.o: src/ft_putendl_fd.c.o
@@ -860,7 +1022,7 @@ src/ft_putendl_fd.o: src/ft_putendl_fd.c.o
 
 # target to build an object file
 src/ft_putendl_fd.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putendl_fd.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putendl_fd.c.o
 .PHONY : src/ft_putendl_fd.c.o
 
 src/ft_putendl_fd.i: src/ft_putendl_fd.c.i
@@ -869,7 +1031,7 @@ src/ft_putendl_fd.i: src/ft_putendl_fd.c.i
 
 # target to preprocess a source file
 src/ft_putendl_fd.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putendl_fd.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putendl_fd.c.i
 .PHONY : src/ft_putendl_fd.c.i
 
 src/ft_putendl_fd.s: src/ft_putendl_fd.c.s
@@ -878,7 +1040,7 @@ src/ft_putendl_fd.s: src/ft_putendl_fd.c.s
 
 # target to generate assembly for a file
 src/ft_putendl_fd.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putendl_fd.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putendl_fd.c.s
 .PHONY : src/ft_putendl_fd.c.s
 
 src/ft_putnbr.o: src/ft_putnbr.c.o
@@ -887,7 +1049,7 @@ src/ft_putnbr.o: src/ft_putnbr.c.o
 
 # target to build an object file
 src/ft_putnbr.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putnbr.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putnbr.c.o
 .PHONY : src/ft_putnbr.c.o
 
 src/ft_putnbr.i: src/ft_putnbr.c.i
@@ -896,7 +1058,7 @@ src/ft_putnbr.i: src/ft_putnbr.c.i
 
 # target to preprocess a source file
 src/ft_putnbr.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putnbr.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putnbr.c.i
 .PHONY : src/ft_putnbr.c.i
 
 src/ft_putnbr.s: src/ft_putnbr.c.s
@@ -905,7 +1067,7 @@ src/ft_putnbr.s: src/ft_putnbr.c.s
 
 # target to generate assembly for a file
 src/ft_putnbr.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putnbr.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putnbr.c.s
 .PHONY : src/ft_putnbr.c.s
 
 src/ft_putnbr_fd.o: src/ft_putnbr_fd.c.o
@@ -914,7 +1076,7 @@ src/ft_putnbr_fd.o: src/ft_putnbr_fd.c.o
 
 # target to build an object file
 src/ft_putnbr_fd.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putnbr_fd.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putnbr_fd.c.o
 .PHONY : src/ft_putnbr_fd.c.o
 
 src/ft_putnbr_fd.i: src/ft_putnbr_fd.c.i
@@ -923,7 +1085,7 @@ src/ft_putnbr_fd.i: src/ft_putnbr_fd.c.i
 
 # target to preprocess a source file
 src/ft_putnbr_fd.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putnbr_fd.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putnbr_fd.c.i
 .PHONY : src/ft_putnbr_fd.c.i
 
 src/ft_putnbr_fd.s: src/ft_putnbr_fd.c.s
@@ -932,7 +1094,7 @@ src/ft_putnbr_fd.s: src/ft_putnbr_fd.c.s
 
 # target to generate assembly for a file
 src/ft_putnbr_fd.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putnbr_fd.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putnbr_fd.c.s
 .PHONY : src/ft_putnbr_fd.c.s
 
 src/ft_putstr.o: src/ft_putstr.c.o
@@ -941,7 +1103,7 @@ src/ft_putstr.o: src/ft_putstr.c.o
 
 # target to build an object file
 src/ft_putstr.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putstr.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putstr.c.o
 .PHONY : src/ft_putstr.c.o
 
 src/ft_putstr.i: src/ft_putstr.c.i
@@ -950,7 +1112,7 @@ src/ft_putstr.i: src/ft_putstr.c.i
 
 # target to preprocess a source file
 src/ft_putstr.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putstr.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putstr.c.i
 .PHONY : src/ft_putstr.c.i
 
 src/ft_putstr.s: src/ft_putstr.c.s
@@ -959,7 +1121,7 @@ src/ft_putstr.s: src/ft_putstr.c.s
 
 # target to generate assembly for a file
 src/ft_putstr.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putstr.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putstr.c.s
 .PHONY : src/ft_putstr.c.s
 
 src/ft_putstr_fd.o: src/ft_putstr_fd.c.o
@@ -968,7 +1130,7 @@ src/ft_putstr_fd.o: src/ft_putstr_fd.c.o
 
 # target to build an object file
 src/ft_putstr_fd.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putstr_fd.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putstr_fd.c.o
 .PHONY : src/ft_putstr_fd.c.o
 
 src/ft_putstr_fd.i: src/ft_putstr_fd.c.i
@@ -977,7 +1139,7 @@ src/ft_putstr_fd.i: src/ft_putstr_fd.c.i
 
 # target to preprocess a source file
 src/ft_putstr_fd.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putstr_fd.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putstr_fd.c.i
 .PHONY : src/ft_putstr_fd.c.i
 
 src/ft_putstr_fd.s: src/ft_putstr_fd.c.s
@@ -986,8 +1148,62 @@ src/ft_putstr_fd.s: src/ft_putstr_fd.c.s
 
 # target to generate assembly for a file
 src/ft_putstr_fd.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putstr_fd.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_putstr_fd.c.s
 .PHONY : src/ft_putstr_fd.c.s
+
+src/ft_round_double.o: src/ft_round_double.c.o
+
+.PHONY : src/ft_round_double.o
+
+# target to build an object file
+src/ft_round_double.c.o:
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_round_double.c.o
+.PHONY : src/ft_round_double.c.o
+
+src/ft_round_double.i: src/ft_round_double.c.i
+
+.PHONY : src/ft_round_double.i
+
+# target to preprocess a source file
+src/ft_round_double.c.i:
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_round_double.c.i
+.PHONY : src/ft_round_double.c.i
+
+src/ft_round_double.s: src/ft_round_double.c.s
+
+.PHONY : src/ft_round_double.s
+
+# target to generate assembly for a file
+src/ft_round_double.c.s:
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_round_double.c.s
+.PHONY : src/ft_round_double.c.s
+
+src/ft_sqrt_up.o: src/ft_sqrt_up.c.o
+
+.PHONY : src/ft_sqrt_up.o
+
+# target to build an object file
+src/ft_sqrt_up.c.o:
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_sqrt_up.c.o
+.PHONY : src/ft_sqrt_up.c.o
+
+src/ft_sqrt_up.i: src/ft_sqrt_up.c.i
+
+.PHONY : src/ft_sqrt_up.i
+
+# target to preprocess a source file
+src/ft_sqrt_up.c.i:
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_sqrt_up.c.i
+.PHONY : src/ft_sqrt_up.c.i
+
+src/ft_sqrt_up.s: src/ft_sqrt_up.c.s
+
+.PHONY : src/ft_sqrt_up.s
+
+# target to generate assembly for a file
+src/ft_sqrt_up.c.s:
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_sqrt_up.c.s
+.PHONY : src/ft_sqrt_up.c.s
 
 src/ft_strcat.o: src/ft_strcat.c.o
 
@@ -995,7 +1211,7 @@ src/ft_strcat.o: src/ft_strcat.c.o
 
 # target to build an object file
 src/ft_strcat.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strcat.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strcat.c.o
 .PHONY : src/ft_strcat.c.o
 
 src/ft_strcat.i: src/ft_strcat.c.i
@@ -1004,7 +1220,7 @@ src/ft_strcat.i: src/ft_strcat.c.i
 
 # target to preprocess a source file
 src/ft_strcat.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strcat.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strcat.c.i
 .PHONY : src/ft_strcat.c.i
 
 src/ft_strcat.s: src/ft_strcat.c.s
@@ -1013,7 +1229,7 @@ src/ft_strcat.s: src/ft_strcat.c.s
 
 # target to generate assembly for a file
 src/ft_strcat.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strcat.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strcat.c.s
 .PHONY : src/ft_strcat.c.s
 
 src/ft_strchr.o: src/ft_strchr.c.o
@@ -1022,7 +1238,7 @@ src/ft_strchr.o: src/ft_strchr.c.o
 
 # target to build an object file
 src/ft_strchr.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strchr.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strchr.c.o
 .PHONY : src/ft_strchr.c.o
 
 src/ft_strchr.i: src/ft_strchr.c.i
@@ -1031,7 +1247,7 @@ src/ft_strchr.i: src/ft_strchr.c.i
 
 # target to preprocess a source file
 src/ft_strchr.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strchr.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strchr.c.i
 .PHONY : src/ft_strchr.c.i
 
 src/ft_strchr.s: src/ft_strchr.c.s
@@ -1040,8 +1256,35 @@ src/ft_strchr.s: src/ft_strchr.c.s
 
 # target to generate assembly for a file
 src/ft_strchr.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strchr.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strchr.c.s
 .PHONY : src/ft_strchr.c.s
+
+src/ft_strchrn.o: src/ft_strchrn.c.o
+
+.PHONY : src/ft_strchrn.o
+
+# target to build an object file
+src/ft_strchrn.c.o:
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strchrn.c.o
+.PHONY : src/ft_strchrn.c.o
+
+src/ft_strchrn.i: src/ft_strchrn.c.i
+
+.PHONY : src/ft_strchrn.i
+
+# target to preprocess a source file
+src/ft_strchrn.c.i:
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strchrn.c.i
+.PHONY : src/ft_strchrn.c.i
+
+src/ft_strchrn.s: src/ft_strchrn.c.s
+
+.PHONY : src/ft_strchrn.s
+
+# target to generate assembly for a file
+src/ft_strchrn.c.s:
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strchrn.c.s
+.PHONY : src/ft_strchrn.c.s
 
 src/ft_strclr.o: src/ft_strclr.c.o
 
@@ -1049,7 +1292,7 @@ src/ft_strclr.o: src/ft_strclr.c.o
 
 # target to build an object file
 src/ft_strclr.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strclr.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strclr.c.o
 .PHONY : src/ft_strclr.c.o
 
 src/ft_strclr.i: src/ft_strclr.c.i
@@ -1058,7 +1301,7 @@ src/ft_strclr.i: src/ft_strclr.c.i
 
 # target to preprocess a source file
 src/ft_strclr.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strclr.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strclr.c.i
 .PHONY : src/ft_strclr.c.i
 
 src/ft_strclr.s: src/ft_strclr.c.s
@@ -1067,7 +1310,7 @@ src/ft_strclr.s: src/ft_strclr.c.s
 
 # target to generate assembly for a file
 src/ft_strclr.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strclr.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strclr.c.s
 .PHONY : src/ft_strclr.c.s
 
 src/ft_strcmp.o: src/ft_strcmp.c.o
@@ -1076,7 +1319,7 @@ src/ft_strcmp.o: src/ft_strcmp.c.o
 
 # target to build an object file
 src/ft_strcmp.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strcmp.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strcmp.c.o
 .PHONY : src/ft_strcmp.c.o
 
 src/ft_strcmp.i: src/ft_strcmp.c.i
@@ -1085,7 +1328,7 @@ src/ft_strcmp.i: src/ft_strcmp.c.i
 
 # target to preprocess a source file
 src/ft_strcmp.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strcmp.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strcmp.c.i
 .PHONY : src/ft_strcmp.c.i
 
 src/ft_strcmp.s: src/ft_strcmp.c.s
@@ -1094,7 +1337,7 @@ src/ft_strcmp.s: src/ft_strcmp.c.s
 
 # target to generate assembly for a file
 src/ft_strcmp.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strcmp.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strcmp.c.s
 .PHONY : src/ft_strcmp.c.s
 
 src/ft_strcpy.o: src/ft_strcpy.c.o
@@ -1103,7 +1346,7 @@ src/ft_strcpy.o: src/ft_strcpy.c.o
 
 # target to build an object file
 src/ft_strcpy.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strcpy.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strcpy.c.o
 .PHONY : src/ft_strcpy.c.o
 
 src/ft_strcpy.i: src/ft_strcpy.c.i
@@ -1112,7 +1355,7 @@ src/ft_strcpy.i: src/ft_strcpy.c.i
 
 # target to preprocess a source file
 src/ft_strcpy.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strcpy.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strcpy.c.i
 .PHONY : src/ft_strcpy.c.i
 
 src/ft_strcpy.s: src/ft_strcpy.c.s
@@ -1121,35 +1364,35 @@ src/ft_strcpy.s: src/ft_strcpy.c.s
 
 # target to generate assembly for a file
 src/ft_strcpy.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strcpy.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strcpy.c.s
 .PHONY : src/ft_strcpy.c.s
 
-src/ft_strcspn.o: src/ft_strcspn.c.o
+src/ft_strcut.o: src/ft_strcut.c.o
 
-.PHONY : src/ft_strcspn.o
+.PHONY : src/ft_strcut.o
 
 # target to build an object file
-src/ft_strcspn.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strcspn.c.o
-.PHONY : src/ft_strcspn.c.o
+src/ft_strcut.c.o:
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strcut.c.o
+.PHONY : src/ft_strcut.c.o
 
-src/ft_strcspn.i: src/ft_strcspn.c.i
+src/ft_strcut.i: src/ft_strcut.c.i
 
-.PHONY : src/ft_strcspn.i
+.PHONY : src/ft_strcut.i
 
 # target to preprocess a source file
-src/ft_strcspn.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strcspn.c.i
-.PHONY : src/ft_strcspn.c.i
+src/ft_strcut.c.i:
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strcut.c.i
+.PHONY : src/ft_strcut.c.i
 
-src/ft_strcspn.s: src/ft_strcspn.c.s
+src/ft_strcut.s: src/ft_strcut.c.s
 
-.PHONY : src/ft_strcspn.s
+.PHONY : src/ft_strcut.s
 
 # target to generate assembly for a file
-src/ft_strcspn.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strcspn.c.s
-.PHONY : src/ft_strcspn.c.s
+src/ft_strcut.c.s:
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strcut.c.s
+.PHONY : src/ft_strcut.c.s
 
 src/ft_strdel.o: src/ft_strdel.c.o
 
@@ -1157,7 +1400,7 @@ src/ft_strdel.o: src/ft_strdel.c.o
 
 # target to build an object file
 src/ft_strdel.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strdel.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strdel.c.o
 .PHONY : src/ft_strdel.c.o
 
 src/ft_strdel.i: src/ft_strdel.c.i
@@ -1166,7 +1409,7 @@ src/ft_strdel.i: src/ft_strdel.c.i
 
 # target to preprocess a source file
 src/ft_strdel.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strdel.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strdel.c.i
 .PHONY : src/ft_strdel.c.i
 
 src/ft_strdel.s: src/ft_strdel.c.s
@@ -1175,7 +1418,7 @@ src/ft_strdel.s: src/ft_strdel.c.s
 
 # target to generate assembly for a file
 src/ft_strdel.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strdel.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strdel.c.s
 .PHONY : src/ft_strdel.c.s
 
 src/ft_strdup.o: src/ft_strdup.c.o
@@ -1184,7 +1427,7 @@ src/ft_strdup.o: src/ft_strdup.c.o
 
 # target to build an object file
 src/ft_strdup.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strdup.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strdup.c.o
 .PHONY : src/ft_strdup.c.o
 
 src/ft_strdup.i: src/ft_strdup.c.i
@@ -1193,7 +1436,7 @@ src/ft_strdup.i: src/ft_strdup.c.i
 
 # target to preprocess a source file
 src/ft_strdup.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strdup.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strdup.c.i
 .PHONY : src/ft_strdup.c.i
 
 src/ft_strdup.s: src/ft_strdup.c.s
@@ -1202,7 +1445,7 @@ src/ft_strdup.s: src/ft_strdup.c.s
 
 # target to generate assembly for a file
 src/ft_strdup.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strdup.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strdup.c.s
 .PHONY : src/ft_strdup.c.s
 
 src/ft_strequ.o: src/ft_strequ.c.o
@@ -1211,7 +1454,7 @@ src/ft_strequ.o: src/ft_strequ.c.o
 
 # target to build an object file
 src/ft_strequ.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strequ.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strequ.c.o
 .PHONY : src/ft_strequ.c.o
 
 src/ft_strequ.i: src/ft_strequ.c.i
@@ -1220,7 +1463,7 @@ src/ft_strequ.i: src/ft_strequ.c.i
 
 # target to preprocess a source file
 src/ft_strequ.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strequ.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strequ.c.i
 .PHONY : src/ft_strequ.c.i
 
 src/ft_strequ.s: src/ft_strequ.c.s
@@ -1229,7 +1472,7 @@ src/ft_strequ.s: src/ft_strequ.c.s
 
 # target to generate assembly for a file
 src/ft_strequ.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strequ.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strequ.c.s
 .PHONY : src/ft_strequ.c.s
 
 src/ft_striter.o: src/ft_striter.c.o
@@ -1238,7 +1481,7 @@ src/ft_striter.o: src/ft_striter.c.o
 
 # target to build an object file
 src/ft_striter.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_striter.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_striter.c.o
 .PHONY : src/ft_striter.c.o
 
 src/ft_striter.i: src/ft_striter.c.i
@@ -1247,7 +1490,7 @@ src/ft_striter.i: src/ft_striter.c.i
 
 # target to preprocess a source file
 src/ft_striter.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_striter.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_striter.c.i
 .PHONY : src/ft_striter.c.i
 
 src/ft_striter.s: src/ft_striter.c.s
@@ -1256,7 +1499,7 @@ src/ft_striter.s: src/ft_striter.c.s
 
 # target to generate assembly for a file
 src/ft_striter.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_striter.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_striter.c.s
 .PHONY : src/ft_striter.c.s
 
 src/ft_striteri.o: src/ft_striteri.c.o
@@ -1265,7 +1508,7 @@ src/ft_striteri.o: src/ft_striteri.c.o
 
 # target to build an object file
 src/ft_striteri.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_striteri.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_striteri.c.o
 .PHONY : src/ft_striteri.c.o
 
 src/ft_striteri.i: src/ft_striteri.c.i
@@ -1274,7 +1517,7 @@ src/ft_striteri.i: src/ft_striteri.c.i
 
 # target to preprocess a source file
 src/ft_striteri.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_striteri.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_striteri.c.i
 .PHONY : src/ft_striteri.c.i
 
 src/ft_striteri.s: src/ft_striteri.c.s
@@ -1283,7 +1526,7 @@ src/ft_striteri.s: src/ft_striteri.c.s
 
 # target to generate assembly for a file
 src/ft_striteri.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_striteri.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_striteri.c.s
 .PHONY : src/ft_striteri.c.s
 
 src/ft_strjoin.o: src/ft_strjoin.c.o
@@ -1292,7 +1535,7 @@ src/ft_strjoin.o: src/ft_strjoin.c.o
 
 # target to build an object file
 src/ft_strjoin.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strjoin.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strjoin.c.o
 .PHONY : src/ft_strjoin.c.o
 
 src/ft_strjoin.i: src/ft_strjoin.c.i
@@ -1301,7 +1544,7 @@ src/ft_strjoin.i: src/ft_strjoin.c.i
 
 # target to preprocess a source file
 src/ft_strjoin.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strjoin.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strjoin.c.i
 .PHONY : src/ft_strjoin.c.i
 
 src/ft_strjoin.s: src/ft_strjoin.c.s
@@ -1310,7 +1553,7 @@ src/ft_strjoin.s: src/ft_strjoin.c.s
 
 # target to generate assembly for a file
 src/ft_strjoin.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strjoin.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strjoin.c.s
 .PHONY : src/ft_strjoin.c.s
 
 src/ft_strlcat.o: src/ft_strlcat.c.o
@@ -1319,7 +1562,7 @@ src/ft_strlcat.o: src/ft_strlcat.c.o
 
 # target to build an object file
 src/ft_strlcat.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strlcat.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strlcat.c.o
 .PHONY : src/ft_strlcat.c.o
 
 src/ft_strlcat.i: src/ft_strlcat.c.i
@@ -1328,7 +1571,7 @@ src/ft_strlcat.i: src/ft_strlcat.c.i
 
 # target to preprocess a source file
 src/ft_strlcat.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strlcat.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strlcat.c.i
 .PHONY : src/ft_strlcat.c.i
 
 src/ft_strlcat.s: src/ft_strlcat.c.s
@@ -1337,7 +1580,7 @@ src/ft_strlcat.s: src/ft_strlcat.c.s
 
 # target to generate assembly for a file
 src/ft_strlcat.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strlcat.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strlcat.c.s
 .PHONY : src/ft_strlcat.c.s
 
 src/ft_strlen.o: src/ft_strlen.c.o
@@ -1346,7 +1589,7 @@ src/ft_strlen.o: src/ft_strlen.c.o
 
 # target to build an object file
 src/ft_strlen.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strlen.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strlen.c.o
 .PHONY : src/ft_strlen.c.o
 
 src/ft_strlen.i: src/ft_strlen.c.i
@@ -1355,7 +1598,7 @@ src/ft_strlen.i: src/ft_strlen.c.i
 
 # target to preprocess a source file
 src/ft_strlen.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strlen.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strlen.c.i
 .PHONY : src/ft_strlen.c.i
 
 src/ft_strlen.s: src/ft_strlen.c.s
@@ -1364,7 +1607,7 @@ src/ft_strlen.s: src/ft_strlen.c.s
 
 # target to generate assembly for a file
 src/ft_strlen.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strlen.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strlen.c.s
 .PHONY : src/ft_strlen.c.s
 
 src/ft_strmap.o: src/ft_strmap.c.o
@@ -1373,7 +1616,7 @@ src/ft_strmap.o: src/ft_strmap.c.o
 
 # target to build an object file
 src/ft_strmap.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strmap.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strmap.c.o
 .PHONY : src/ft_strmap.c.o
 
 src/ft_strmap.i: src/ft_strmap.c.i
@@ -1382,7 +1625,7 @@ src/ft_strmap.i: src/ft_strmap.c.i
 
 # target to preprocess a source file
 src/ft_strmap.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strmap.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strmap.c.i
 .PHONY : src/ft_strmap.c.i
 
 src/ft_strmap.s: src/ft_strmap.c.s
@@ -1391,7 +1634,7 @@ src/ft_strmap.s: src/ft_strmap.c.s
 
 # target to generate assembly for a file
 src/ft_strmap.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strmap.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strmap.c.s
 .PHONY : src/ft_strmap.c.s
 
 src/ft_strmapi.o: src/ft_strmapi.c.o
@@ -1400,7 +1643,7 @@ src/ft_strmapi.o: src/ft_strmapi.c.o
 
 # target to build an object file
 src/ft_strmapi.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strmapi.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strmapi.c.o
 .PHONY : src/ft_strmapi.c.o
 
 src/ft_strmapi.i: src/ft_strmapi.c.i
@@ -1409,7 +1652,7 @@ src/ft_strmapi.i: src/ft_strmapi.c.i
 
 # target to preprocess a source file
 src/ft_strmapi.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strmapi.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strmapi.c.i
 .PHONY : src/ft_strmapi.c.i
 
 src/ft_strmapi.s: src/ft_strmapi.c.s
@@ -1418,7 +1661,7 @@ src/ft_strmapi.s: src/ft_strmapi.c.s
 
 # target to generate assembly for a file
 src/ft_strmapi.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strmapi.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strmapi.c.s
 .PHONY : src/ft_strmapi.c.s
 
 src/ft_strncat.o: src/ft_strncat.c.o
@@ -1427,7 +1670,7 @@ src/ft_strncat.o: src/ft_strncat.c.o
 
 # target to build an object file
 src/ft_strncat.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strncat.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strncat.c.o
 .PHONY : src/ft_strncat.c.o
 
 src/ft_strncat.i: src/ft_strncat.c.i
@@ -1436,7 +1679,7 @@ src/ft_strncat.i: src/ft_strncat.c.i
 
 # target to preprocess a source file
 src/ft_strncat.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strncat.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strncat.c.i
 .PHONY : src/ft_strncat.c.i
 
 src/ft_strncat.s: src/ft_strncat.c.s
@@ -1445,7 +1688,7 @@ src/ft_strncat.s: src/ft_strncat.c.s
 
 # target to generate assembly for a file
 src/ft_strncat.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strncat.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strncat.c.s
 .PHONY : src/ft_strncat.c.s
 
 src/ft_strncmp.o: src/ft_strncmp.c.o
@@ -1454,7 +1697,7 @@ src/ft_strncmp.o: src/ft_strncmp.c.o
 
 # target to build an object file
 src/ft_strncmp.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strncmp.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strncmp.c.o
 .PHONY : src/ft_strncmp.c.o
 
 src/ft_strncmp.i: src/ft_strncmp.c.i
@@ -1463,7 +1706,7 @@ src/ft_strncmp.i: src/ft_strncmp.c.i
 
 # target to preprocess a source file
 src/ft_strncmp.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strncmp.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strncmp.c.i
 .PHONY : src/ft_strncmp.c.i
 
 src/ft_strncmp.s: src/ft_strncmp.c.s
@@ -1472,7 +1715,7 @@ src/ft_strncmp.s: src/ft_strncmp.c.s
 
 # target to generate assembly for a file
 src/ft_strncmp.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strncmp.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strncmp.c.s
 .PHONY : src/ft_strncmp.c.s
 
 src/ft_strncpy.o: src/ft_strncpy.c.o
@@ -1481,7 +1724,7 @@ src/ft_strncpy.o: src/ft_strncpy.c.o
 
 # target to build an object file
 src/ft_strncpy.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strncpy.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strncpy.c.o
 .PHONY : src/ft_strncpy.c.o
 
 src/ft_strncpy.i: src/ft_strncpy.c.i
@@ -1490,7 +1733,7 @@ src/ft_strncpy.i: src/ft_strncpy.c.i
 
 # target to preprocess a source file
 src/ft_strncpy.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strncpy.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strncpy.c.i
 .PHONY : src/ft_strncpy.c.i
 
 src/ft_strncpy.s: src/ft_strncpy.c.s
@@ -1499,7 +1742,7 @@ src/ft_strncpy.s: src/ft_strncpy.c.s
 
 # target to generate assembly for a file
 src/ft_strncpy.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strncpy.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strncpy.c.s
 .PHONY : src/ft_strncpy.c.s
 
 src/ft_strnequ.o: src/ft_strnequ.c.o
@@ -1508,7 +1751,7 @@ src/ft_strnequ.o: src/ft_strnequ.c.o
 
 # target to build an object file
 src/ft_strnequ.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strnequ.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strnequ.c.o
 .PHONY : src/ft_strnequ.c.o
 
 src/ft_strnequ.i: src/ft_strnequ.c.i
@@ -1517,7 +1760,7 @@ src/ft_strnequ.i: src/ft_strnequ.c.i
 
 # target to preprocess a source file
 src/ft_strnequ.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strnequ.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strnequ.c.i
 .PHONY : src/ft_strnequ.c.i
 
 src/ft_strnequ.s: src/ft_strnequ.c.s
@@ -1526,7 +1769,7 @@ src/ft_strnequ.s: src/ft_strnequ.c.s
 
 # target to generate assembly for a file
 src/ft_strnequ.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strnequ.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strnequ.c.s
 .PHONY : src/ft_strnequ.c.s
 
 src/ft_strnew.o: src/ft_strnew.c.o
@@ -1535,7 +1778,7 @@ src/ft_strnew.o: src/ft_strnew.c.o
 
 # target to build an object file
 src/ft_strnew.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strnew.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strnew.c.o
 .PHONY : src/ft_strnew.c.o
 
 src/ft_strnew.i: src/ft_strnew.c.i
@@ -1544,7 +1787,7 @@ src/ft_strnew.i: src/ft_strnew.c.i
 
 # target to preprocess a source file
 src/ft_strnew.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strnew.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strnew.c.i
 .PHONY : src/ft_strnew.c.i
 
 src/ft_strnew.s: src/ft_strnew.c.s
@@ -1553,7 +1796,7 @@ src/ft_strnew.s: src/ft_strnew.c.s
 
 # target to generate assembly for a file
 src/ft_strnew.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strnew.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strnew.c.s
 .PHONY : src/ft_strnew.c.s
 
 src/ft_strnstr.o: src/ft_strnstr.c.o
@@ -1562,7 +1805,7 @@ src/ft_strnstr.o: src/ft_strnstr.c.o
 
 # target to build an object file
 src/ft_strnstr.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strnstr.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strnstr.c.o
 .PHONY : src/ft_strnstr.c.o
 
 src/ft_strnstr.i: src/ft_strnstr.c.i
@@ -1571,7 +1814,7 @@ src/ft_strnstr.i: src/ft_strnstr.c.i
 
 # target to preprocess a source file
 src/ft_strnstr.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strnstr.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strnstr.c.i
 .PHONY : src/ft_strnstr.c.i
 
 src/ft_strnstr.s: src/ft_strnstr.c.s
@@ -1580,7 +1823,7 @@ src/ft_strnstr.s: src/ft_strnstr.c.s
 
 # target to generate assembly for a file
 src/ft_strnstr.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strnstr.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strnstr.c.s
 .PHONY : src/ft_strnstr.c.s
 
 src/ft_strrchr.o: src/ft_strrchr.c.o
@@ -1589,7 +1832,7 @@ src/ft_strrchr.o: src/ft_strrchr.c.o
 
 # target to build an object file
 src/ft_strrchr.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strrchr.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strrchr.c.o
 .PHONY : src/ft_strrchr.c.o
 
 src/ft_strrchr.i: src/ft_strrchr.c.i
@@ -1598,7 +1841,7 @@ src/ft_strrchr.i: src/ft_strrchr.c.i
 
 # target to preprocess a source file
 src/ft_strrchr.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strrchr.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strrchr.c.i
 .PHONY : src/ft_strrchr.c.i
 
 src/ft_strrchr.s: src/ft_strrchr.c.s
@@ -1607,7 +1850,7 @@ src/ft_strrchr.s: src/ft_strrchr.c.s
 
 # target to generate assembly for a file
 src/ft_strrchr.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strrchr.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strrchr.c.s
 .PHONY : src/ft_strrchr.c.s
 
 src/ft_strsplit.o: src/ft_strsplit.c.o
@@ -1616,7 +1859,7 @@ src/ft_strsplit.o: src/ft_strsplit.c.o
 
 # target to build an object file
 src/ft_strsplit.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strsplit.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strsplit.c.o
 .PHONY : src/ft_strsplit.c.o
 
 src/ft_strsplit.i: src/ft_strsplit.c.i
@@ -1625,7 +1868,7 @@ src/ft_strsplit.i: src/ft_strsplit.c.i
 
 # target to preprocess a source file
 src/ft_strsplit.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strsplit.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strsplit.c.i
 .PHONY : src/ft_strsplit.c.i
 
 src/ft_strsplit.s: src/ft_strsplit.c.s
@@ -1634,8 +1877,35 @@ src/ft_strsplit.s: src/ft_strsplit.c.s
 
 # target to generate assembly for a file
 src/ft_strsplit.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strsplit.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strsplit.c.s
 .PHONY : src/ft_strsplit.c.s
+
+src/ft_strsplitwhitespaces.o: src/ft_strsplitwhitespaces.c.o
+
+.PHONY : src/ft_strsplitwhitespaces.o
+
+# target to build an object file
+src/ft_strsplitwhitespaces.c.o:
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strsplitwhitespaces.c.o
+.PHONY : src/ft_strsplitwhitespaces.c.o
+
+src/ft_strsplitwhitespaces.i: src/ft_strsplitwhitespaces.c.i
+
+.PHONY : src/ft_strsplitwhitespaces.i
+
+# target to preprocess a source file
+src/ft_strsplitwhitespaces.c.i:
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strsplitwhitespaces.c.i
+.PHONY : src/ft_strsplitwhitespaces.c.i
+
+src/ft_strsplitwhitespaces.s: src/ft_strsplitwhitespaces.c.s
+
+.PHONY : src/ft_strsplitwhitespaces.s
+
+# target to generate assembly for a file
+src/ft_strsplitwhitespaces.c.s:
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strsplitwhitespaces.c.s
+.PHONY : src/ft_strsplitwhitespaces.c.s
 
 src/ft_strstr.o: src/ft_strstr.c.o
 
@@ -1643,7 +1913,7 @@ src/ft_strstr.o: src/ft_strstr.c.o
 
 # target to build an object file
 src/ft_strstr.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strstr.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strstr.c.o
 .PHONY : src/ft_strstr.c.o
 
 src/ft_strstr.i: src/ft_strstr.c.i
@@ -1652,7 +1922,7 @@ src/ft_strstr.i: src/ft_strstr.c.i
 
 # target to preprocess a source file
 src/ft_strstr.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strstr.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strstr.c.i
 .PHONY : src/ft_strstr.c.i
 
 src/ft_strstr.s: src/ft_strstr.c.s
@@ -1661,7 +1931,7 @@ src/ft_strstr.s: src/ft_strstr.c.s
 
 # target to generate assembly for a file
 src/ft_strstr.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strstr.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strstr.c.s
 .PHONY : src/ft_strstr.c.s
 
 src/ft_strsub.o: src/ft_strsub.c.o
@@ -1670,7 +1940,7 @@ src/ft_strsub.o: src/ft_strsub.c.o
 
 # target to build an object file
 src/ft_strsub.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strsub.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strsub.c.o
 .PHONY : src/ft_strsub.c.o
 
 src/ft_strsub.i: src/ft_strsub.c.i
@@ -1679,7 +1949,7 @@ src/ft_strsub.i: src/ft_strsub.c.i
 
 # target to preprocess a source file
 src/ft_strsub.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strsub.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strsub.c.i
 .PHONY : src/ft_strsub.c.i
 
 src/ft_strsub.s: src/ft_strsub.c.s
@@ -1688,7 +1958,7 @@ src/ft_strsub.s: src/ft_strsub.c.s
 
 # target to generate assembly for a file
 src/ft_strsub.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strsub.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strsub.c.s
 .PHONY : src/ft_strsub.c.s
 
 src/ft_strtrim.o: src/ft_strtrim.c.o
@@ -1697,7 +1967,7 @@ src/ft_strtrim.o: src/ft_strtrim.c.o
 
 # target to build an object file
 src/ft_strtrim.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strtrim.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strtrim.c.o
 .PHONY : src/ft_strtrim.c.o
 
 src/ft_strtrim.i: src/ft_strtrim.c.i
@@ -1706,7 +1976,7 @@ src/ft_strtrim.i: src/ft_strtrim.c.i
 
 # target to preprocess a source file
 src/ft_strtrim.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strtrim.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strtrim.c.i
 .PHONY : src/ft_strtrim.c.i
 
 src/ft_strtrim.s: src/ft_strtrim.c.s
@@ -1715,7 +1985,7 @@ src/ft_strtrim.s: src/ft_strtrim.c.s
 
 # target to generate assembly for a file
 src/ft_strtrim.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strtrim.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_strtrim.c.s
 .PHONY : src/ft_strtrim.c.s
 
 src/ft_tolower.o: src/ft_tolower.c.o
@@ -1724,7 +1994,7 @@ src/ft_tolower.o: src/ft_tolower.c.o
 
 # target to build an object file
 src/ft_tolower.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_tolower.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_tolower.c.o
 .PHONY : src/ft_tolower.c.o
 
 src/ft_tolower.i: src/ft_tolower.c.i
@@ -1733,7 +2003,7 @@ src/ft_tolower.i: src/ft_tolower.c.i
 
 # target to preprocess a source file
 src/ft_tolower.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_tolower.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_tolower.c.i
 .PHONY : src/ft_tolower.c.i
 
 src/ft_tolower.s: src/ft_tolower.c.s
@@ -1742,7 +2012,7 @@ src/ft_tolower.s: src/ft_tolower.c.s
 
 # target to generate assembly for a file
 src/ft_tolower.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_tolower.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_tolower.c.s
 .PHONY : src/ft_tolower.c.s
 
 src/ft_toupper.o: src/ft_toupper.c.o
@@ -1751,7 +2021,7 @@ src/ft_toupper.o: src/ft_toupper.c.o
 
 # target to build an object file
 src/ft_toupper.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_toupper.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_toupper.c.o
 .PHONY : src/ft_toupper.c.o
 
 src/ft_toupper.i: src/ft_toupper.c.i
@@ -1760,7 +2030,7 @@ src/ft_toupper.i: src/ft_toupper.c.i
 
 # target to preprocess a source file
 src/ft_toupper.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_toupper.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_toupper.c.i
 .PHONY : src/ft_toupper.c.i
 
 src/ft_toupper.s: src/ft_toupper.c.s
@@ -1769,7 +2039,7 @@ src/ft_toupper.s: src/ft_toupper.c.s
 
 # target to generate assembly for a file
 src/ft_toupper.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_toupper.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/ft_toupper.c.s
 .PHONY : src/ft_toupper.c.s
 
 src/get_next_line.o: src/get_next_line.c.o
@@ -1778,7 +2048,7 @@ src/get_next_line.o: src/get_next_line.c.o
 
 # target to build an object file
 src/get_next_line.c.o:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/get_next_line.c.o
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/get_next_line.c.o
 .PHONY : src/get_next_line.c.o
 
 src/get_next_line.i: src/get_next_line.c.i
@@ -1787,7 +2057,7 @@ src/get_next_line.i: src/get_next_line.c.i
 
 # target to preprocess a source file
 src/get_next_line.c.i:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/get_next_line.c.i
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/get_next_line.c.i
 .PHONY : src/get_next_line.c.i
 
 src/get_next_line.s: src/get_next_line.c.s
@@ -1796,7 +2066,7 @@ src/get_next_line.s: src/get_next_line.c.s
 
 # target to generate assembly for a file
 src/get_next_line.c.s:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/get_next_line.c.s
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/src/get_next_line.c.s
 .PHONY : src/get_next_line.c.s
 
 # Help Target
@@ -1808,15 +2078,30 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... libft"
+	@echo "... src/ft_abs.o"
+	@echo "... src/ft_abs.i"
+	@echo "... src/ft_abs.s"
+	@echo "... src/ft_abs_double.o"
+	@echo "... src/ft_abs_double.i"
+	@echo "... src/ft_abs_double.s"
 	@echo "... src/ft_atoi.o"
 	@echo "... src/ft_atoi.i"
 	@echo "... src/ft_atoi.s"
+	@echo "... src/ft_atoi_hex.o"
+	@echo "... src/ft_atoi_hex.i"
+	@echo "... src/ft_atoi_hex.s"
 	@echo "... src/ft_bzero.o"
 	@echo "... src/ft_bzero.i"
 	@echo "... src/ft_bzero.s"
-	@echo "... src/ft_freearr.o"
-	@echo "... src/ft_freearr.i"
-	@echo "... src/ft_freearr.s"
+	@echo "... src/ft_count_words.o"
+	@echo "... src/ft_count_words.i"
+	@echo "... src/ft_count_words.s"
+	@echo "... src/ft_diff_double.o"
+	@echo "... src/ft_diff_double.i"
+	@echo "... src/ft_diff_double.s"
+	@echo "... src/ft_dtoa.o"
+	@echo "... src/ft_dtoa.i"
+	@echo "... src/ft_dtoa.s"
 	@echo "... src/ft_isalnum.o"
 	@echo "... src/ft_isalnum.i"
 	@echo "... src/ft_isalnum.s"
@@ -1835,9 +2120,9 @@ help:
 	@echo "... src/ft_itoa.o"
 	@echo "... src/ft_itoa.i"
 	@echo "... src/ft_itoa.s"
-	@echo "... src/ft_joinfree.o"
-	@echo "... src/ft_joinfree.i"
-	@echo "... src/ft_joinfree.s"
+	@echo "... src/ft_itoalen.o"
+	@echo "... src/ft_itoalen.i"
+	@echo "... src/ft_itoalen.s"
 	@echo "... src/ft_lstadd.o"
 	@echo "... src/ft_lstadd.i"
 	@echo "... src/ft_lstadd.s"
@@ -1880,6 +2165,9 @@ help:
 	@echo "... src/ft_memset.o"
 	@echo "... src/ft_memset.i"
 	@echo "... src/ft_memset.s"
+	@echo "... src/ft_power.o"
+	@echo "... src/ft_power.i"
+	@echo "... src/ft_power.s"
 	@echo "... src/ft_putchar.o"
 	@echo "... src/ft_putchar.i"
 	@echo "... src/ft_putchar.s"
@@ -1904,12 +2192,21 @@ help:
 	@echo "... src/ft_putstr_fd.o"
 	@echo "... src/ft_putstr_fd.i"
 	@echo "... src/ft_putstr_fd.s"
+	@echo "... src/ft_round_double.o"
+	@echo "... src/ft_round_double.i"
+	@echo "... src/ft_round_double.s"
+	@echo "... src/ft_sqrt_up.o"
+	@echo "... src/ft_sqrt_up.i"
+	@echo "... src/ft_sqrt_up.s"
 	@echo "... src/ft_strcat.o"
 	@echo "... src/ft_strcat.i"
 	@echo "... src/ft_strcat.s"
 	@echo "... src/ft_strchr.o"
 	@echo "... src/ft_strchr.i"
 	@echo "... src/ft_strchr.s"
+	@echo "... src/ft_strchrn.o"
+	@echo "... src/ft_strchrn.i"
+	@echo "... src/ft_strchrn.s"
 	@echo "... src/ft_strclr.o"
 	@echo "... src/ft_strclr.i"
 	@echo "... src/ft_strclr.s"
@@ -1919,9 +2216,9 @@ help:
 	@echo "... src/ft_strcpy.o"
 	@echo "... src/ft_strcpy.i"
 	@echo "... src/ft_strcpy.s"
-	@echo "... src/ft_strcspn.o"
-	@echo "... src/ft_strcspn.i"
-	@echo "... src/ft_strcspn.s"
+	@echo "... src/ft_strcut.o"
+	@echo "... src/ft_strcut.i"
+	@echo "... src/ft_strcut.s"
 	@echo "... src/ft_strdel.o"
 	@echo "... src/ft_strdel.i"
 	@echo "... src/ft_strdel.s"
@@ -1976,6 +2273,9 @@ help:
 	@echo "... src/ft_strsplit.o"
 	@echo "... src/ft_strsplit.i"
 	@echo "... src/ft_strsplit.s"
+	@echo "... src/ft_strsplitwhitespaces.o"
+	@echo "... src/ft_strsplitwhitespaces.i"
+	@echo "... src/ft_strsplitwhitespaces.s"
 	@echo "... src/ft_strstr.o"
 	@echo "... src/ft_strstr.i"
 	@echo "... src/ft_strstr.s"
@@ -2005,6 +2305,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/pcollio-/Projects/Filler/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/pcollio-/Projects/filler_team/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

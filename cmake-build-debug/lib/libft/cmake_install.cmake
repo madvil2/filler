@@ -1,4 +1,4 @@
-# Install script for directory: /Users/pcollio-/Projects/Filler/lib/libft
+# Install script for directory: /Users/pcollio-/Projects/filler_team/lib/libft
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

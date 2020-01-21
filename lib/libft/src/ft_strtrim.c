@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pcollio- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: fsmith <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/12/11 23:19:44 by pcollio-          #+#    #+#             */
-/*   Updated: 2019/02/09 16:58:18 by pcollio-         ###   ########.fr       */
+/*   Created: 2018/12/12 21:41:11 by fsmith            #+#    #+#             */
+/*   Updated: 2019/09/24 20:32:00 by fsmith           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,21 @@
 
 char	*ft_strtrim(char const *s)
 {
-	char			*str;
-	size_t			len;
-	int				i;
+	size_t	len;
+	size_t	i;
+	char	*ret;
 
 	if (!s)
 		return (NULL);
-	i = 0;
-	while (s[i] == ' ' || s[i] == '\t' || s[i] == '\n')
-		i++;
-	if (s[i] == '\0')
-		return (ft_strnew(0));
 	len = ft_strlen(s);
-	while (s[len] == ' ' || s[len] == '\t' || s[len] == '\n' || s[len] == '\0')
+	i = 0;
+	while (s[i] == ' ' || s[i] == '\n' || s[i] == '\t')
+		i++;
+	if (i == len)
+		return (ft_strdup(""));
+	while (s[len] == ' ' || s[len] == '\n' || s[len] == '\t' \
+											|| s[len] == '\0')
 		len--;
-	str = ft_strsub(s, i, len - i + 1);
-	return (str);
+	ret = ft_strsub(s, i, (len - i + 1));
+	return (ret);
 }

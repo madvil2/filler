@@ -3,29 +3,38 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pcollio- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: fsmith <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/12/08 21:46:41 by pcollio-          #+#    #+#             */
-/*   Updated: 2019/02/09 16:58:18 by pcollio-         ###   ########.fr       */
+/*   Created: 2018/12/02 19:31:44 by fsmith            #+#    #+#             */
+/*   Updated: 2019/09/24 20:32:00 by fsmith           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dst, const void *src, size_t len)
+void				*ft_memmove(void *dst, const void *src, size_t len)
 {
-	unsigned char	*dup_src;
-	unsigned char	*dup_dst;
+	size_t			i;
+	unsigned char	*s1;
+	unsigned char	*s2;
 
-	dup_src = (unsigned char *)src;
-	dup_dst = (unsigned char *)dst;
-	if ((dst == NULL && src == NULL) || dst == src)
-		return (NULL);
-	if (dst > src)
-		while (len--)
-			dup_dst[len] = dup_src[len];
-	else if (src > dst)
-		while (len--)
-			*dup_dst++ = *dup_src++;
+	i = 0;
+	s1 = (unsigned char *)dst;
+	s2 = (unsigned char *)src;
+	if (s1 < s2)
+		while (i < len)
+		{
+			s1[i] = s2[i];
+			i++;
+		}
+	else
+	{
+		i = len - 1;
+		while (((int)i) >= 0)
+		{
+			s1[i] = s2[i];
+			i--;
+		}
+	}
 	return (dst);
 }

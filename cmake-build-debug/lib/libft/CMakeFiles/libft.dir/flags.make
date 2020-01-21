@@ -6,5 +6,5 @@ C_FLAGS = -g   -std=gnu99
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/pcollio-/Projects/Filler/includes -I/Users/pcollio-/Projects/Filler/lib/libft/includes 
+C_INCLUDES = -I/Users/pcollio-/Projects/filler_team/includes -I/Users/pcollio-/Projects/filler_team/lib/libft/includes 
 

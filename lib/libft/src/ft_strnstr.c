@@ -3,32 +3,34 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pcollio- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: fsmith <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/12/05 20:42:35 by pcollio-          #+#    #+#             */
-/*   Updated: 2019/02/09 16:58:18 by pcollio-         ###   ########.fr       */
+/*   Created: 2018/12/09 17:58:22 by fsmith            #+#    #+#             */
+/*   Updated: 2019/09/24 20:32:00 by fsmith           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *s1, const char *s2, size_t n)
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	size_t i;
-	size_t s1len;
-	size_t s2len;
+	size_t		i;
+	size_t		lenh;
+	size_t		lenn;
 
 	i = 0;
-	s1len = ft_strlen(s1);
-	s2len = ft_strlen(s2);
-	if (s2[0] == '\0')
-		return ((char *)s1);
-	while (i < s1len && i + s2len <= n)
+	lenh = ft_strlen(haystack);
+	lenn = ft_strlen(needle);
+	if (needle[0] == '\0')
+		return ((char *)haystack);
+	while (i < lenh && i + lenn <= len)
 	{
-		if (ft_strncmp(&s1[i], s2, s2len) != 0)
+		if (ft_strncmp(&haystack[i], needle, lenn) != 0)
 			i++;
 		else
-			return ((char *)&s1[i]);
+		{
+			return ((char *)&haystack[i]);
+		}
 	}
 	return (NULL);
 }

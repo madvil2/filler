@@ -1,4 +1,4 @@
-# Install script for directory: /Users/pcollio-/Projects/Filler
+# Install script for directory: /Users/pcollio-/Projects/filler_team
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/pcollio-/Projects/Filler/cmake-build-debug/lib/libft/cmake_install.cmake")
+  include("/Users/pcollio-/Projects/filler_team/cmake-build-debug/lib/libft/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/pcollio-/Projects/Filler/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/pcollio-/Projects/filler_team/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

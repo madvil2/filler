@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../includes/filler.h
+libft.h
+../includes/libft.h
+
+../lib/libft/includes/libft.h
+unistd.h
+-
+stdlib.h
+-
+string.h
+-
+
+/Users/pcollio-/Projects/filler_team/src/fl_main.c
+filler.h
+/Users/pcollio-/Projects/filler_team/src/filler.h
+

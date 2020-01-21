@@ -3,61 +3,40 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pcollio- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: fsmith <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/12/11 13:49:44 by pcollio-          #+#    #+#             */
-/*   Updated: 2019/02/09 16:58:17 by pcollio-         ###   ########.fr       */
+/*   Created: 2018/12/09 13:29:47 by fsmith            #+#    #+#             */
+/*   Updated: 2019/09/24 20:32:00 by fsmith           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_intlen(int n)
-{
-	int i;
-
-	i = 0;
-	if (n >= 0)
-	{
-		while (n >= 10)
-		{
-			n /= 10;
-			i++;
-		}
-		return (i + 1);
-	}
-	else
-	{
-		while (n <= -10)
-		{
-			n /= 10;
-			i++;
-		}
-		return (i + 2);
-	}
-}
-
 char		*ft_itoa(int n)
 {
-	char	*ans;
+	char	*str;
 	int		len;
 
-	len = ft_intlen(n);
-	if ((ans = ft_strnew(len)) == NULL)
+	if (n < -2147483647)
+		return (ft_strdup("-2147483648"));
+	len = ft_itoalen(n);
+	str = (char*)malloc(sizeof(char) * (len + 1));
+	if (!str)
 		return (NULL);
-	if (n == 0)
-		return (ft_strcpy(ft_strnew(1), "0"));
-	if (n == -2147483648)
-		return (ft_strcpy(ft_strnew(11), "-2147483648"));
 	if (n < 0)
 	{
-		n *= -1;
-		ans[0] = '-';
+		str[0] = '-';
+		n = n * -1;
 	}
+	if (n == 0)
+		str[0] = '0';
+	str[len] = '\0';
+	len--;
 	while (n)
 	{
-		ans[--len] = ((n % 10) + '0');
-		n /= 10;
+		str[len] = (n % 10) + '0';
+		n = n / 10;
+		len--;
 	}
-	return (ans);
+	return (str);
 }
